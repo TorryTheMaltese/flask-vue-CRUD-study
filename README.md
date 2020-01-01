@@ -1,4 +1,4 @@
-1 Jan 2019
+1 Jan 2020
 # Developing a Single Page App with Flask and Vue.js
 
 ### Reference
