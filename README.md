@@ -3,6 +3,7 @@
 
 ### Reference
 https://github.com/testdrivenio/flask-vue-crud
+https://joshua1988.github.io/web-development/vuejs/boost-productivity/
 
 ## If you wanna use this project
 
