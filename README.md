@@ -1,9 +1,14 @@
 1 Jan 2020
 # Developing a Single Page App with Flask and Vue.js
 
-### Reference
-https://github.com/testdrivenio/flask-vue-crud
-https://joshua1988.github.io/web-development/vuejs/boost-productivity/
+## Reference
+Flask-CRUD  
+https://github.com/testdrivenio/flask-vue-crud  
+
+ESLint  
+https://joshua1988.github.io/web-development/vuejs/boost-productivity/  
+
+---
 
 ## If you wanna use this project
 

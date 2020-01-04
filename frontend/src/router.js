@@ -1,17 +1,29 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Books from './components/Books.vue';
+import Vue from "vue";
+import Router from "vue-router";
+import Books from "./components/Books.vue";
+import Ping from "./components/Ping.vue";
+import HelloWorld from "./components/HelloWorld.vue";
 
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
-      name: 'Books',
-      component: Books,
+      path: "/",
+      name: "Books",
+      component: Books
     },
-  ],
+    {
+      path: "/ping",
+      name: "Ping",
+      component: Ping
+    },
+    {
+      path: "/hello",
+      name: "HelloWorld",
+      component: HelloWorld
+    }
+  ]
 });

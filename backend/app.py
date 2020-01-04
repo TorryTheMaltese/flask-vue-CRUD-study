@@ -34,7 +34,17 @@ app.config.from_object(__name__)
 CORS(app, resources={r'/*': {'origins': '*'}})
 
 
+# sanity check route
+@app.route('/ping', methods=['GET'])
+def ping_pong():
+    return jsonify('pong!')
+
+
 def remove_book(book_id):
+    for book in BOOKS:
+        if book['id'] == book_id:
+            BOOKS.remove(book)
+            return True
     return False
 
 
@@ -72,6 +82,7 @@ def single_book(book_id):
         remove_book(book_id)
         response_object['message'] = 'Book removed !'
     return jsonify(response_object)
+
 
 if __name__ == '__main__':
     app.run()
